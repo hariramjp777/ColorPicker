@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+   
+
+    <div class="container">
+        <header>
+            <h1>CSS Color Picker</h1>
+            <select name="picker" id="picker">
+                <option value="0" selected disabled>Select</option>
+                <option value="rgb">rgb()</option>
+                <option value="rgba">rgba()</option>
+                <option value="hsl">hsl()</option>
+                <option value="hsla">hsla()</option>
+            </select>
+        </header>
+        <main>
+            <section id="color-picker">
+                <div class="color-box">
+                    <p></p>
+            
+                </div>
+            </section>
+            <section id="inputs">
+                <label for="first-range"></label>
+                <input type="range" id="first-range" min="0" max="255">
+                <label for="second-range"></label>
+                <input type="range" id="second-range" min="0" max="255">
+                <label for="third-range"></label>
+                <input type="range" id="third-range" min="0" max="255">
+                <div class="to-hide">
+                    <label for="fourth-range">ALPHA</label>
+                    <input type="range" id="fourth-range" min="0" max="1" step="0.1">
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
